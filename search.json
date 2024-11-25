@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "myQuartoProj",
+    "section": "",
+    "text": "Mi Repositorio"
+  },
+  {
+    "objectID": "index.html#learnig-how-to-do-a-documentation-with-md-and-quarto",
+    "href": "index.html#learnig-how-to-do-a-documentation-with-md-and-quarto",
+    "title": "myQuartoProj",
+    "section": "",
+    "text": "Mi Repositorio"
+  },
+  {
+    "objectID": "index.html#las-buenas-prácticas-de-la-documentación",
+    "href": "index.html#las-buenas-prácticas-de-la-documentación",
+    "title": "myQuartoProj",
+    "section": "Las buenas prácticas de la Documentación",
+    "text": "Las buenas prácticas de la Documentación\n\nIntroducción\nContenido: Explicación general del propósito del documento, qué se va a cubrir y el objetivo principal. ### Encabezados Para crear encabezados en Quarto, usas los símbolos #, tal como en Markdown estándar.\n\n\nListas desordenadas (con viñetas)\nUtiliza asteriscos (*), guiones (-) o más (+) para las listas no ordenadas. - Elemento 1 - Elemento 2 - Sub-elemento 1 - Sub-elemento 2\n\n\nListas ordenadas (numeradas)\nLas listas numeradas se crean con números seguidos de un punto.\n1. Primer elemento\n2. Segundo elemento\n3. Tercer elemento\n\n\nNegrita y Cursiva\nPara resaltar texto, puedes utilizar asteriscos (*) o guiones bajos (_). Negrita: usa dos asteriscos o guiones bajos alrededor de la palabra. Cursiva: usa un solo asterisco o guion bajo alrededor de la palabra. Negrita y cursiva: usa tres asteriscos o guiones bajos. El tachado se crea con dos tildes (~~) alrededor de la palabra o frase.\n\n\nCheckbox\n\nTask 1\n\nCreate\n\nTask 2\n\nEdit\n\nTask 3\n\nMetrics\n\nTask 4\n\ngh pages\n\n\n\n\nEnlaces e Imágenes\nTexto del enlace\n\nImágenes La sintaxis es similar a la de los enlaces, pero con un signo de exclamación (!) al principio.\n\n\n\n\nTexto alternativo\n\n\n\n\nCitas\nPara crear citas, usa el símbolo de mayor (&gt;).\n\nSoy una cita\n\n\n\nTablas\nPuedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.\n\n\n\nColumna 1\nColumna 2\nColumna 3\n\n\n\n\nDato 1\nDato 2\nDato 3\n\n\nDato 4\nDato 5\nDato 6\n\n\n\n\n\nReferencias y Notas\nMarkdown también te permite escribir notas o advertencias, aunque esto depende de la plataforma en la que estés usando Markdown.\n\nNota: Esta es una nota importante."
+  },
+  {
+    "objectID": "index.html#flechas-y-emojis-usar-emoji-para-agregar-emojis.",
+    "href": "index.html#flechas-y-emojis-usar-emoji-para-agregar-emojis.",
+    "title": "myQuartoProj",
+    "section": "Flechas y emojis: Usar :emoji: para agregar emojis.",
+    "text": "Flechas y emojis: Usar :emoji: para agregar emojis.\n:smile:\n\nIntroducción\nEste documento proporciona una guía detallada sobre cómo realizar análisis de datos utilizando el lenguaje R y el paquete dplyr. A lo largo de este documento, se cubrirán los pasos básicos para importar, procesar y visualizar datos.\n\nInstalación y Requisitos\n\nContenido: Explica cómo instalar las dependencias necesarias para trabajar en el proyecto, así como cualquier otro requisito previo (software, herramientas, bibliotecas)."
+  },
+  {
+    "objectID": "index.html#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown",
+    "href": "index.html#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown",
+    "title": "myQuartoProj",
+    "section": "Guía de Buenas Prácticas para Documentar con Quarto y Markdown",
+    "text": "Guía de Buenas Prácticas para Documentar con Quarto y Markdown\n\nInstalación de Quarto\n\nQuarto es una herramienta de documentación y análisis que soporta Markdown de manera avanzada. Puedes instalar Quarto siguiendo estos pasos:\n\nInstalación en Windows/macOS/Linux\nWindows: Descarga el instalador desde quarto.org. Ejecuta el archivo .exe y sigue los pasos del asistente de instalación.\nmacOS: Si tienes Homebrew, simplemente ejecuta el siguiente comando:\nbrew install --cask quarto\nAlternativamente, descarga el archivo .pkg desde quarto.org y sigue las instrucciones.\nLinux: En distribuciones basadas en Debian (como Ubuntu):\nsudo apt install quarto\n\n\nVerificar la Instalación\nUna vez instalado, puedes verificar que Quarto está correctamente instalado ejecutando el siguiente comando en tu terminal o línea de comandos: quarto --version\n\n\nCrear un Proyecto Básico con Quarto\n\nCrear un Nuevo Proyecto Quarto\n\n\nPara comenzar a usar Quarto, necesitas crear un proyecto. Vamos a crear un archivo .qmd que es el formato de Quarto para documentos.\nCrea una carpeta para tu proyecto. Abre tu terminal o explorador de archivos y crea una nueva carpeta, por ejemplo, mi-proyecto-quarto.\n\nCrea un archivo de Quarto. Dentro de esa carpeta,\ncrea un archivo con extensión .qmd, por ejemplo, index.qmd.\n\nPuedes hacerlo desde la terminal con el siguiente comando (asegúrate de estar dentro de la carpeta que creaste):\ntouch index.qmd\n\n\nEscribir un Documento Básico en Quarto\nAhora que tienes un archivo .qmd, ábrelo en tu editor de texto o IDE favorito (por ejemplo, Visual Studio Code, RStudio, etc.). Vamos a escribir algo de contenido básico.\nEjemplo de contenido para el archivo index.qmd:\n ---\n title: \"Mi Proyecto Quarto\"\n author: \"Tu Nombre\"\n output: html_document\n ---\nIntroducción\n\nEste es un ejemplo de cómo usar Quarto. Puedes generar informes y documentos de forma sencilla."
+  },
+  {
+    "objectID": "index.html#qué-es-quarto",
+    "href": "index.html#qué-es-quarto",
+    "title": "myQuartoProj",
+    "section": "¿Qué es Quarto?",
+    "text": "¿Qué es Quarto?\nQuarto es una herramienta para crear documentos dinámicos y reproducibles, que soporta varios lenguajes de programación como R, Python y Julia.\n\nCódigos en Quarto\nPuedes incluir código dentro de tus documentos, antes necesitas instalar python3.\n\n\nEstructura Básica de un Proyecto Quarto\nUn proyecto típico en Quarto incluye archivos de Markdown (.qmd) que se procesan para generar documentos de salida como HTML, PDF o presentaciones.\n\n\nEstructura\n\nmi-proyecto/\n│\n├── index.qmd      # Documento principal en Quarto\n├── contenido.qmd  # Otro archivo de contenido\n├── imagenes/       # Carpeta para imágenes\n│   └── imagen.png\n└── _output/        # Carpeta de salida generada (HTML, PDF)\n\n\n\nClaridad en los Encabezados\nUtiliza encabezados de manera jerárquica para organizar bien el contenido de tu documento. Esto hace que la lectura sea más fácil y que los usuarios puedan navegar por el contenido de manera estructurada.\n\n\nResumen\n\n\nDescargar el instalador desde quarto.org.\nEjecutar el archivo descargado.\nSeguir las instrucciones en pantalla.\n\n\n\n\nEjemplo de uso de Quarto\nPara crear un documento de salida en formato HTML:\nquarto render index.qmd\n\n\n    #### **Mantener la Consistencia en el Estilo**\n    Mantén un estilo coherente en todo el documento, tanto en la forma de escribir (gramática, ortografía) como en la estructura de los encabezados y el formato de los códigos.\n\n    #### **Incluir Imágenes y Diagramas**\n    Si es relevante para la documentación, incluye imágenes y diagramas que ayuden a ilustrar los conceptos. Usa imágenes de calidad y asegúrate de que estén bien referenciadas en el documento.\n\n\nAbrir el Documento Generado\nAbre el archivo generado en tu navegador. Puedes encontrarlo en la carpeta _site dentro del proyecto. El archivo tendrá el nombre index.html.\nPuedes abrirlo directamente desde el explorador de archivos o ejecutar el siguiente comando:\nopen _site/index.html   # En macOS\nstart _site/index.html  # En Windows\nxdg-open _site/index.html  # En Linux\n\n\n\nDiagrama de flujo\n\n\n\n\nRenderización y Salida\nUna vez que hayas creado tu archivo .qmd, puedes generar la salida en el formato que desees (HTML, PDF, etc.) con el siguiente comando en la terminal: quarto render index.qmd Esto generará el archivo de salida en la carpeta _output/.\n\n\nCódigo\n\nBloques de Código\nPara insertar bloques de código, usa tres tildes inversas (```) al principio y al final del bloque de código. También puedes especificar el lenguaje para resaltar la sintaxis.\n    def saludo():\n    print(\"Hola, mundo\")\n\n    Para código en línea, usa una sola tilde inversa alrededor del fragmento de código.\n    Este es un `código en línea`."
+  },
+  {
+    "objectID": "index.html#instalación-y-requisitos",
+    "href": "index.html#instalación-y-requisitos",
+    "title": "myQuartoProj",
+    "section": "Instalación y Requisitos",
+    "text": "Instalación y Requisitos\nPara comenzar, asegúrate de tener instalado R y RStudio en tu sistema. También necesitarás el paquete dplyr para realizar las operaciones de transformación de datos.\ninstall.packages(“dplyr”)\nSi deseas trabajar con Quarto, puedes instalarlo siguiendo estos"
+  },
+  {
+    "objectID": "index.html#configuración-inicial",
+    "href": "index.html#configuración-inicial",
+    "title": "myQuartoProj",
+    "section": "Configuración Inicial",
+    "text": "Configuración Inicial\nAsegúrate de tener los siguientes archivos en tu directorio de trabajo:\n\ndata.csv: Un archivo con los datos de ejemplo para análisis.\nscript.R: El archivo donde escribirás tus scripts de análisis.\n\nLa estructura de tu proyecto debe ser la siguiente:\n/mi-proyecto \n├── data/ \n│ └── data.csv \n├── scripts/ \n│ └── script.R \n├── documentation/ \n│ └── index.qmd"
+  }
+]

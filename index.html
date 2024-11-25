@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>myQuartoProj</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d250651c517812259706e038a3844c92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">myQuartoProj</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">myPage</span>
+    </span>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learnig-how-to-do-a-documentation-with-md-and-quarto" id="toc-learnig-how-to-do-a-documentation-with-md-and-quarto" class="nav-link active" data-scroll-target="#learnig-how-to-do-a-documentation-with-md-and-quarto">Learnig how to do a documentation with <code>md</code> and <code>quarto</code></a></li>
+  <li><a href="#las-buenas-prácticas-de-la-documentación" id="toc-las-buenas-prácticas-de-la-documentación" class="nav-link" data-scroll-target="#las-buenas-prácticas-de-la-documentación">Las buenas prácticas de la Documentación</a>
+  <ul class="collapse">
+  <li><a href="#introducción" id="toc-introducción" class="nav-link" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#listas-desordenadas-con-viñetas" id="toc-listas-desordenadas-con-viñetas" class="nav-link" data-scroll-target="#listas-desordenadas-con-viñetas">Listas desordenadas (con viñetas)</a></li>
+  <li><a href="#listas-ordenadas-numeradas" id="toc-listas-ordenadas-numeradas" class="nav-link" data-scroll-target="#listas-ordenadas-numeradas">Listas ordenadas (numeradas)</a></li>
+  <li><a href="#negrita-y-cursiva" id="toc-negrita-y-cursiva" class="nav-link" data-scroll-target="#negrita-y-cursiva">Negrita y Cursiva</a></li>
+  <li><a href="#checkbox" id="toc-checkbox" class="nav-link" data-scroll-target="#checkbox">Checkbox</a></li>
+  <li><a href="#enlaces-e-imágenes" id="toc-enlaces-e-imágenes" class="nav-link" data-scroll-target="#enlaces-e-imágenes">Enlaces e Imágenes</a></li>
+  <li><a href="#citas" id="toc-citas" class="nav-link" data-scroll-target="#citas">Citas</a></li>
+  <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas">Tablas</a></li>
+  <li><a href="#referencias-y-notas" id="toc-referencias-y-notas" class="nav-link" data-scroll-target="#referencias-y-notas">Referencias y Notas</a></li>
+  </ul></li>
+  <li><a href="#flechas-y-emojis-usar-emoji-para-agregar-emojis." id="toc-flechas-y-emojis-usar-emoji-para-agregar-emojis." class="nav-link" data-scroll-target="#flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</a>
+  <ul class="collapse">
+  <li><a href="#introducción-1" id="toc-introducción-1" class="nav-link" data-scroll-target="#introducción-1">Introducción</a></li>
+  </ul></li>
+  <li><a href="#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" id="toc-guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" class="nav-link" data-scroll-target="#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown">Guía de Buenas Prácticas para Documentar con Quarto y Markdown</a>
+  <ul class="collapse">
+  <li><a href="#instalación-en-windowsmacoslinux" id="toc-instalación-en-windowsmacoslinux" class="nav-link" data-scroll-target="#instalación-en-windowsmacoslinux">Instalación en Windows/macOS/Linux</a></li>
+  <li><a href="#verificar-la-instalación" id="toc-verificar-la-instalación" class="nav-link" data-scroll-target="#verificar-la-instalación">Verificar la Instalación</a></li>
+  <li><a href="#crear-un-proyecto-básico-con-quarto" id="toc-crear-un-proyecto-básico-con-quarto" class="nav-link" data-scroll-target="#crear-un-proyecto-básico-con-quarto">Crear un Proyecto Básico con Quarto</a></li>
+  </ul></li>
+  <li><a href="#qué-es-quarto" id="toc-qué-es-quarto" class="nav-link" data-scroll-target="#qué-es-quarto">¿Qué es Quarto?</a>
+  <ul class="collapse">
+  <li><a href="#códigos-en-quarto" id="toc-códigos-en-quarto" class="nav-link" data-scroll-target="#códigos-en-quarto">Códigos en Quarto</a></li>
+  <li><a href="#estructura-básica-de-un-proyecto-quarto" id="toc-estructura-básica-de-un-proyecto-quarto" class="nav-link" data-scroll-target="#estructura-básica-de-un-proyecto-quarto">Estructura Básica de un Proyecto Quarto</a></li>
+  <li><a href="#claridad-en-los-encabezados" id="toc-claridad-en-los-encabezados" class="nav-link" data-scroll-target="#claridad-en-los-encabezados">Claridad en los Encabezados</a></li>
+  <li><a href="#ejemplo-de-uso-de-quarto" id="toc-ejemplo-de-uso-de-quarto" class="nav-link" data-scroll-target="#ejemplo-de-uso-de-quarto">Ejemplo de uso de Quarto</a></li>
+  <li><a href="#abrir-el-documento-generado" id="toc-abrir-el-documento-generado" class="nav-link" data-scroll-target="#abrir-el-documento-generado">Abrir el Documento Generado</a></li>
+  <li><a href="#renderización-y-salida" id="toc-renderización-y-salida" class="nav-link" data-scroll-target="#renderización-y-salida">Renderización y Salida</a></li>
+  <li><a href="#código" id="toc-código" class="nav-link" data-scroll-target="#código">Código</a></li>
+  </ul></li>
+  <li><a href="#instalación-y-requisitos" id="toc-instalación-y-requisitos" class="nav-link" data-scroll-target="#instalación-y-requisitos">Instalación y Requisitos</a></li>
+  <li><a href="#configuración-inicial" id="toc-configuración-inicial" class="nav-link" data-scroll-target="#configuración-inicial">Configuración Inicial</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">myQuartoProj</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learnig-how-to-do-a-documentation-with-md-and-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="learnig-how-to-do-a-documentation-with-md-and-quarto">Learnig how to do a documentation with <code>md</code> and <code>quarto</code></h2>
+<p><a href="https://crhacker7.github.com.git">Mi Repositorio</a></p>
+</section>
+<section id="las-buenas-prácticas-de-la-documentación" class="level2">
+<h2 class="anchored" data-anchor-id="las-buenas-prácticas-de-la-documentación">Las buenas prácticas de la Documentación</h2>
+<section id="introducción" class="level3">
+<h3 class="anchored" data-anchor-id="introducción">Introducción</h3>
+<p>Contenido: Explicación general del propósito del documento, qué se va a cubrir y el objetivo principal. ### Encabezados Para crear encabezados en Quarto, usas los símbolos #, tal como en Markdown estándar.</p>
+</section>
+<section id="listas-desordenadas-con-viñetas" class="level3">
+<h3 class="anchored" data-anchor-id="listas-desordenadas-con-viñetas">Listas desordenadas (con viñetas)</h3>
+<p>Utiliza asteriscos (*), guiones (-) o más (+) para las listas no ordenadas. - Elemento 1 - Elemento 2 - Sub-elemento 1 - Sub-elemento 2</p>
+</section>
+<section id="listas-ordenadas-numeradas" class="level3">
+<h3 class="anchored" data-anchor-id="listas-ordenadas-numeradas">Listas ordenadas (numeradas)</h3>
+<p>Las listas numeradas se crean con números seguidos de un punto.</p>
+<pre><code>1. Primer elemento
+2. Segundo elemento
+3. Tercer elemento</code></pre>
+</section>
+<section id="negrita-y-cursiva" class="level3">
+<h3 class="anchored" data-anchor-id="negrita-y-cursiva">Negrita y Cursiva</h3>
+<p>Para resaltar texto, puedes utilizar asteriscos (*) o guiones bajos (_). Negrita: usa dos asteriscos o guiones bajos alrededor de la palabra. Cursiva: usa un solo asterisco o guion bajo alrededor de la palabra. Negrita y cursiva: usa tres asteriscos o guiones bajos. El tachado se crea con dos tildes (~~) alrededor de la palabra o frase.</p>
+</section>
+<section id="checkbox" class="level3">
+<h3 class="anchored" data-anchor-id="checkbox">Checkbox</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Task 1</label>
+<ul>
+<li>Create</li>
+</ul></li>
+<li><label><input type="checkbox" checked="">Task 2</label>
+<ul>
+<li>Edit</li>
+</ul></li>
+<li><label><input type="checkbox">Task 3</label>
+<ul>
+<li>Metrics</li>
+</ul></li>
+<li><label><input type="checkbox">Task 4</label>
+<ul>
+<li>gh pages</li>
+</ul></li>
+</ul>
+</section>
+<section id="enlaces-e-imágenes" class="level3">
+<h3 class="anchored" data-anchor-id="enlaces-e-imágenes">Enlaces e Imágenes</h3>
+<p><a href="http://enlace.com">Texto del enlace</a></p>
+<ul>
+<li>Imágenes La sintaxis es similar a la de los enlaces, pero con un signo de exclamación (!) al principio.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="url-de-imagen.jpg" class="img-fluid figure-img"></p>
+<figcaption>Texto alternativo</figcaption>
+</figure>
+</div>
+</section>
+<section id="citas" class="level3">
+<h3 class="anchored" data-anchor-id="citas">Citas</h3>
+<p>Para crear citas, usa el símbolo de mayor (&gt;).</p>
+<blockquote class="blockquote">
+<p>Soy una cita</p>
+</blockquote>
+</section>
+<section id="tablas" class="level3">
+<h3 class="anchored" data-anchor-id="tablas">Tablas</h3>
+<p>Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Columna 1</th>
+<th>Columna 2</th>
+<th>Columna 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dato 1</td>
+<td>Dato 2</td>
+<td>Dato 3</td>
+</tr>
+<tr class="even">
+<td>Dato 4</td>
+<td>Dato 5</td>
+<td>Dato 6</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="referencias-y-notas" class="level3">
+<h3 class="anchored" data-anchor-id="referencias-y-notas">Referencias y Notas</h3>
+<p>Markdown también te permite escribir notas o advertencias, aunque esto depende de la plataforma en la que estés usando Markdown.</p>
+<blockquote class="blockquote">
+<p><strong>Nota</strong>: Esta es una nota importante.</p>
+</blockquote>
+</section>
+</section>
+<section id="flechas-y-emojis-usar-emoji-para-agregar-emojis." class="level2">
+<h2 class="anchored" data-anchor-id="flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</h2>
+<p>:smile:</p>
+<section id="introducción-1" class="level3">
+<h3 class="anchored" data-anchor-id="introducción-1">Introducción</h3>
+<p>Este documento proporciona una guía detallada sobre cómo realizar análisis de datos utilizando el lenguaje R y el paquete <code>dplyr</code>. A lo largo de este documento, se cubrirán los pasos básicos para importar, procesar y visualizar datos.</p>
+<ol start="3" type="1">
+<li>Instalación y Requisitos</li>
+</ol>
+<p>Contenido: Explica cómo instalar las dependencias necesarias para trabajar en el proyecto, así como cualquier otro requisito previo (software, herramientas, bibliotecas).</p>
+</section>
+</section>
+<section id="guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown">Guía de Buenas Prácticas para Documentar con Quarto y Markdown</h2>
+<ol type="1">
+<li>Instalación de Quarto</li>
+</ol>
+<p>Quarto es una herramienta de documentación y análisis que soporta Markdown de manera avanzada. Puedes instalar Quarto siguiendo estos pasos:</p>
+<section id="instalación-en-windowsmacoslinux" class="level3">
+<h3 class="anchored" data-anchor-id="instalación-en-windowsmacoslinux">Instalación en Windows/macOS/Linux</h3>
+<p><strong>Windows:</strong> Descarga el instalador desde quarto.org. Ejecuta el archivo .exe y sigue los pasos del asistente de instalación.</p>
+<p><strong>macOS:</strong> Si tienes Homebrew, simplemente ejecuta el siguiente comando:</p>
+<p><code>brew install --cask quarto</code></p>
+<p>Alternativamente, descarga el archivo .pkg desde quarto.org y sigue las instrucciones.</p>
+<p><strong>Linux:</strong> En distribuciones basadas en Debian (como Ubuntu):</p>
+<p><code>sudo apt install quarto</code></p>
+</section>
+<section id="verificar-la-instalación" class="level3">
+<h3 class="anchored" data-anchor-id="verificar-la-instalación">Verificar la Instalación</h3>
+<p>Una vez instalado, puedes verificar que Quarto está correctamente instalado ejecutando el siguiente comando en tu terminal o línea de comandos: <code>quarto --version</code></p>
+</section>
+<section id="crear-un-proyecto-básico-con-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="crear-un-proyecto-básico-con-quarto">Crear un Proyecto Básico con Quarto</h3>
+<ol type="1">
+<li>Crear un Nuevo Proyecto Quarto</li>
+</ol>
+<ul>
+<li><p>Para comenzar a usar Quarto, necesitas crear un proyecto. Vamos a crear un archivo .qmd que es el formato de Quarto para documentos.</p></li>
+<li><p>Crea una carpeta para tu proyecto. Abre tu terminal o explorador de archivos y crea una nueva carpeta, por ejemplo, mi-proyecto-quarto.</p>
+<ul>
+<li>Crea un archivo de Quarto. Dentro de esa carpeta,</li>
+<li>crea un archivo con extensión .qmd, por ejemplo, index.qmd.</li>
+</ul>
+<p>Puedes hacerlo desde la terminal con el siguiente comando (asegúrate de estar dentro de la carpeta que creaste):</p>
+<p><code>touch index.qmd</code></p></li>
+</ul>
+<ol start="2" type="1">
+<li><p>Escribir un Documento Básico en Quarto</p>
+<p>Ahora que tienes un archivo .qmd, ábrelo en tu editor de texto o IDE favorito (por ejemplo, Visual Studio Code, RStudio, etc.). Vamos a escribir algo de contenido básico.</p>
+<p>Ejemplo de contenido para el archivo index.qmd:</p>
+<pre><code> ---
+ title: "Mi Proyecto Quarto"
+ author: "Tu Nombre"
+ output: html_document
+ ---</code></pre>
+<h1 id="introducción-2">Introducción</h1></li>
+</ol>
+<p>Este es un ejemplo de cómo usar Quarto. Puedes generar informes y documentos de forma sencilla.</p>
+</section>
+</section>
+<section id="qué-es-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-quarto">¿Qué es Quarto?</h2>
+<p>Quarto es una herramienta para crear documentos dinámicos y reproducibles, que soporta varios lenguajes de programación como R, Python y Julia.</p>
+<section id="códigos-en-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="códigos-en-quarto">Códigos en Quarto</h3>
+<p>Puedes incluir código dentro de tus documentos, antes necesitas instalar python3.</p>
+</section>
+<section id="estructura-básica-de-un-proyecto-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="estructura-básica-de-un-proyecto-quarto">Estructura Básica de un Proyecto Quarto</h3>
+<p>Un proyecto típico en Quarto incluye archivos de Markdown (.qmd) que se procesan para generar documentos de salida como HTML, PDF o presentaciones.</p>
+<details>
+<summary>
+Estructura
+</summary>
+<pre><code>mi-proyecto/
+│
+├── index.qmd      # Documento principal en Quarto
+├── contenido.qmd  # Otro archivo de contenido
+├── imagenes/       # Carpeta para imágenes
+│   └── imagen.png
+└── _output/        # Carpeta de salida generada (HTML, PDF)</code></pre>
+</details>
+</section>
+<section id="claridad-en-los-encabezados" class="level3">
+<h3 class="anchored" data-anchor-id="claridad-en-los-encabezados">Claridad en los Encabezados</h3>
+<p>Utiliza encabezados de manera jerárquica para organizar bien el contenido de tu documento. Esto hace que la lectura sea más fácil y que los usuarios puedan navegar por el contenido de manera estructurada.</p>
+<details>
+<summary>
+Resumen
+</summary>
+<ol type="1">
+<li>Descargar el instalador desde <a href="https://quarto.org">quarto.org</a>.</li>
+<li>Ejecutar el archivo descargado.</li>
+<li>Seguir las instrucciones en pantalla.</li>
+</ol>
+</details>
+</section>
+<section id="ejemplo-de-uso-de-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-de-uso-de-quarto">Ejemplo de uso de Quarto</h3>
+<p>Para crear un documento de salida en formato HTML:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render index.qmd</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#### **Mantener la Consistencia en el Estilo**</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Mantén</span> un estilo coherente en todo el documento, tanto en la forma de escribir <span class="er">(</span><span class="ex">gramática,</span> ortografía<span class="kw">)</span> <span class="ex">como</span> en la estructura de los encabezados y el formato de los códigos.</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">#### **Incluir Imágenes y Diagramas**</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Si</span> es relevante para la documentación, incluye imágenes y diagramas que ayuden a ilustrar los conceptos. Usa imágenes de calidad y asegúrate de que estén bien referenciadas en el documento.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="abrir-el-documento-generado" class="level3">
+<h3 class="anchored" data-anchor-id="abrir-el-documento-generado">Abrir el Documento Generado</h3>
+<p>Abre el archivo generado en tu navegador. Puedes encontrarlo en la carpeta _site dentro del proyecto. El archivo tendrá el nombre index.html.</p>
+<p>Puedes abrirlo directamente desde el explorador de archivos o ejecutar el siguiente comando:</p>
+<pre><code>open _site/index.html   # En macOS
+start _site/index.html  # En Windows
+xdg-open _site/index.html  # En Linux</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="grafico.jpg" class="img-fluid figure-img"></p>
+<figcaption>Diagrama de flujo</figcaption>
+</figure>
+</div>
+</section>
+<section id="renderización-y-salida" class="level3">
+<h3 class="anchored" data-anchor-id="renderización-y-salida">Renderización y Salida</h3>
+<p>Una vez que hayas creado tu archivo .qmd, puedes generar la salida en el formato que desees (HTML, PDF, etc.) con el siguiente comando en la terminal: <code>quarto render index.qmd</code> Esto generará el archivo de salida en la carpeta _output/.</p>
+</section>
+<section id="código" class="level3">
+<h3 class="anchored" data-anchor-id="código">Código</h3>
+<section id="bloques-de-código" class="level4">
+<h4 class="anchored" data-anchor-id="bloques-de-código">Bloques de Código</h4>
+<p>Para insertar bloques de código, usa tres tildes inversas (```) al principio y al final del bloque de código. También puedes especificar el lenguaje para resaltar la sintaxis.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> saludo():</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hola, mundo"</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    Para código en línea, usa una sola tilde inversa alrededor <span class="kw">del</span> fragmento de código.</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    Este es un `código en línea`.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+</section>
+<section id="instalación-y-requisitos" class="level2">
+<h2 class="anchored" data-anchor-id="instalación-y-requisitos">Instalación y Requisitos</h2>
+<p>Para comenzar, asegúrate de tener instalado R y RStudio en tu sistema. También necesitarás el paquete <code>dplyr</code> para realizar las operaciones de transformación de datos.</p>
+<p>install.packages(“dplyr”)</p>
+<p>Si deseas trabajar con Quarto, puedes instalarlo siguiendo estos</p>
+</section>
+<section id="configuración-inicial" class="level2">
+<h2 class="anchored" data-anchor-id="configuración-inicial">Configuración Inicial</h2>
+<p>Asegúrate de tener los siguientes archivos en tu directorio de trabajo:</p>
+<ul>
+<li><code>data.csv</code>: Un archivo con los datos de ejemplo para análisis.</li>
+<li><code>script.R</code>: El archivo donde escribirás tus scripts de análisis.</li>
+</ul>
+<p>La estructura de tu proyecto debe ser la siguiente:</p>
+<pre><code>/mi-proyecto 
+├── data/ 
+│ └── data.csv 
+├── scripts/ 
+│ └── script.R 
+├── documentation/ 
+│ └── index.qmd</code></pre>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
