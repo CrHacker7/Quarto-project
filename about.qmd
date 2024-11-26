@@ -8,6 +8,8 @@ About this site
 [Markdown en quarto](https://github.com/AlbertProfe/DevOps_PRA/blob/master/MF01-PRA01.md)
 
 #### Apartados por terminar
+- [x] 1. Create a Local Markdown Quarto Website
+- [x] 2. Modify the Website
 - [ ] 3. Implement Website Navigation
 - [ ] 4. Include Mermaid Diagrams
 - [ ] 5. Configure the _quarto.yml File

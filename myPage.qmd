@@ -4,6 +4,14 @@ title: "myPage"
 
 About Animal example...
 
+``` {mermaid}
+graph LR
+    A[Client] --> B[Load Balancer]
+    B --> C[Server1]
+    B --> D[Server2]
+```
+
+```{mermaid}
 ---
 title: Animal example
 ---
@@ -31,9 +39,4 @@ classDiagram
         +run()
     }
 
-
-``` mermaid
-graph LR
-    A[Client] --> B[Load Balancer]
-    B --> C[Server1]
-    B --> D[Server2]
+```

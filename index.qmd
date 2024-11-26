@@ -162,13 +162,13 @@ Una vez instalado, puedes verificar que Quarto está correctamente instalado eje
     Ahora que tienes un archivo .qmd, ábrelo en tu editor de texto o IDE favorito (por ejemplo, Visual Studio Code, RStudio, etc.). Vamos a escribir algo de contenido básico.
 
     Ejemplo de contenido para el archivo index.qmd:
-```
+
 ---
 title: "Mi Proyecto Quarto"
 author: "Tu Nombre"
 output: html_document
 ---
-```
+
 # Introducción
 
 Este es un ejemplo de cómo usar Quarto. Puedes generar informes y documentos de forma sencilla.
@@ -278,7 +278,8 @@ Asegúrate de tener los siguientes archivos en tu directorio de trabajo:
 
 La estructura de tu proyecto debe ser la siguiente:
 
-   my-quarto-site/
+
+my-quarto-site/
 ├── _quarto.yml
 ├── index.qmd
 ├── about.qmd
