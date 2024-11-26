@@ -265,9 +265,9 @@ La estructura de tu proyecto debe ser la siguiente:
 
     /mi-proyecto 
     ├── data/ 
-    │ └── data.csv 
+    │ └── data
     ├── scripts/ 
-    │ └── script.R 
+    │ └── script
     ├── documentation/ 
     │ └── index.qmd
 
