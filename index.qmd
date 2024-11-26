@@ -68,7 +68,29 @@ Para crear citas, usa el símbolo de mayor (>).
 
 >Soy una cita
 
+### ::: {.callout-note}
+nota
+:::
 
+::: {.callout-tip}
+tip
+:::
+
+::: {.callout-important}
+important
+:::
+
+::: {.callout-caution}
+caution
+:::
+
+::: {callout}
+normal
+:::
+
+::: {.callout-warning}
+warning
+:::
 
 ### Tablas
 
@@ -148,11 +170,11 @@ Una vez instalado, puedes verificar que Quarto está correctamente instalado eje
 
     Ejemplo de contenido para el archivo index.qmd:
 ```
-    ---
-    title: "Mi Proyecto Quarto"
-    author: "Tu Nombre"
-    output: html_document
-    ---
+---
+title: "Mi Proyecto Quarto"
+author: "Tu Nombre"
+output: html_document
+---
 ```
 # Introducción
 
