@@ -110,13 +110,7 @@ Markdown también te permite escribir notas o advertencias, aunque esto depende 
 :smile:
 
 
-### Introducción
-
-Este documento proporciona una guía detallada sobre cómo realizar análisis de datos utilizando el lenguaje R y el paquete `dplyr`. A lo largo de este documento, se cubrirán los pasos básicos para importar, procesar y visualizar datos.
-
-3. Instalación y Requisitos
-
-Contenido: Explica cómo instalar las dependencias necesarias para trabajar en el proyecto, así como cualquier otro requisito previo (software, herramientas, bibliotecas).
+### Instalación y Requisitos
 
 
 ## Guía de Buenas Prácticas para Documentar con Quarto y Markdown
@@ -284,13 +278,13 @@ Asegúrate de tener los siguientes archivos en tu directorio de trabajo:
 
 La estructura de tu proyecto debe ser la siguiente:
 
-    /mi-proyecto 
-    ├── data/ 
-    │ └── data
-    ├── scripts/ 
-    │ └── script
-    ├── documentation/ 
-    │ └── index.qmd
+   my-quarto-site/
+├── _quarto.yml
+├── index.qmd
+├── about.qmd
+├── myPage.qmd
+├── .gitignore
+└── .git/
 
 
 

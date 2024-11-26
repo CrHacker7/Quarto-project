@@ -3,3 +3,14 @@ title: "About"
 ---
 
 About this site
+
+### Ejercicios del repositorio con quarto
+[Markdown en quarto](https://github.com/AlbertProfe/DevOps_PRA/blob/master/MF01-PRA01.md)
+
+#### Apartados por terminar
+- [ ] 3. Implement Website Navigation
+- [ ] 4. Include Mermaid Diagrams
+- [ ] 5. Configure the _quarto.yml File
+- [x] 6. Set Up a Git Repository and Link to GitHub
+- [x] 7. Publish the Website to GitHub Pages
+- [ ] 8. 
