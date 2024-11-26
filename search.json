@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "myPage.html",
+    "href": "myPage.html",
+    "title": "myPage",
     "section": "",
-    "text": "About this site"
+    "text": "About me…"
   },
   {
     "objectID": "index.html",
@@ -60,6 +60,13 @@
     "href": "index.html#configuración-inicial",
     "title": "myQuartoProj",
     "section": "Configuración Inicial",
-    "text": "Configuración Inicial\nAsegúrate de tener los siguientes archivos en tu directorio de trabajo:\n\ndata.csv: Un archivo con los datos de ejemplo para análisis.\nscript.R: El archivo donde escribirás tus scripts de análisis.\n\nLa estructura de tu proyecto debe ser la siguiente:\n/mi-proyecto \n├── data/ \n│ └── data.csv \n├── scripts/ \n│ └── script.R \n├── documentation/ \n│ └── index.qmd"
+    "text": "Configuración Inicial\nAsegúrate de tener los siguientes archivos en tu directorio de trabajo:\n\ndata.csv: Un archivo con los datos de ejemplo para análisis.\nscript.R: El archivo donde escribirás tus scripts de análisis.\n\nLa estructura de tu proyecto debe ser la siguiente:\n/mi-proyecto \n├── data/ \n│ └── data\n├── scripts/ \n│ └── script\n├── documentation/ \n│ └── index.qmd"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
