@@ -2,9 +2,9 @@
   {
     "objectID": "myPage.html",
     "href": "myPage.html",
-    "title": "myPage",
+    "title": "Animal example",
     "section": "",
-    "text": "About me…"
+    "text": "About Animal example…\nclassDiagram note “From Duck till Zebra” Animal &lt;|– Duck note for Duck “can flyswimdivehelp in debugging” Animal &lt;|– Fish Animal &lt;|– Zebra Animal : +int age Animal : +String gender Animal: +isMammal() Animal: +mate() class Duck{ +String beakColor +swim() +quack() } class Fish{ -int sizeInFeet -canEat() } class Zebra{ +bool is_wild +run() }\n``` mermaid graph LR A[Client] –&gt; B[Load Balancer] B –&gt; C[Server1] B –&gt; D[Server2]"
   },
   {
     "objectID": "index.html",
@@ -32,7 +32,7 @@
     "href": "index.html#flechas-y-emojis-usar-emoji-para-agregar-emojis.",
     "title": "myQuartoProj",
     "section": "Flechas y emojis: Usar :emoji: para agregar emojis.",
-    "text": "Flechas y emojis: Usar :emoji: para agregar emojis.\n:smile:\n\nIntroducción\nEste documento proporciona una guía detallada sobre cómo realizar análisis de datos utilizando el lenguaje R y el paquete dplyr. A lo largo de este documento, se cubrirán los pasos básicos para importar, procesar y visualizar datos.\n\nInstalación y Requisitos\n\nContenido: Explica cómo instalar las dependencias necesarias para trabajar en el proyecto, así como cualquier otro requisito previo (software, herramientas, bibliotecas)."
+    "text": "Flechas y emojis: Usar :emoji: para agregar emojis.\n:smile:\n\nInstalación y Requisitos"
   },
   {
     "objectID": "index.html#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown",
@@ -49,8 +49,8 @@
     "text": "¿Qué es Quarto?\nQuarto es una herramienta para crear documentos dinámicos y reproducibles, que soporta varios lenguajes de programación como R, Python y Julia.\n\nCódigos en Quarto\nPuedes incluir código dentro de tus documentos, antes necesitas instalar python3.\n\n\nEstructura Básica de un Proyecto Quarto\nUn proyecto típico en Quarto incluye archivos de Markdown (.qmd) que se procesan para generar documentos de salida como HTML, PDF o presentaciones.\n\n\nEstructura\n\nmi-proyecto/\n│\n├── index.qmd      # Documento principal en Quarto\n├── contenido.qmd  # Otro archivo de contenido\n├── imagenes/       # Carpeta para imágenes\n│   └── imagen.png\n└── _output/        # Carpeta de salida generada (HTML, PDF)\n\n\n\nClaridad en los Encabezados\nUtiliza encabezados de manera jerárquica para organizar bien el contenido de tu documento. Esto hace que la lectura sea más fácil y que los usuarios puedan navegar por el contenido de manera estructurada.\n\n\nResumen\n\n\nDescargar el instalador desde quarto.org.\nEjecutar el archivo descargado.\nSeguir las instrucciones en pantalla.\n\n\n\n\nEjemplo de uso de Quarto\nPara crear un documento de salida en formato HTML:\nquarto render index.qmd\n\n\n    #### **Mantener la Consistencia en el Estilo**\n    Mantén un estilo coherente en todo el documento, tanto en la forma de escribir (gramática, ortografía) como en la estructura de los encabezados y el formato de los códigos.\n\n    #### **Incluir Imágenes y Diagramas**\n    Si es relevante para la documentación, incluye imágenes y diagramas que ayuden a ilustrar los conceptos. Usa imágenes de calidad y asegúrate de que estén bien referenciadas en el documento.\n\n\nAbrir el Documento Generado\nAbre el archivo generado en tu navegador. Puedes encontrarlo en la carpeta _site dentro del proyecto. El archivo tendrá el nombre index.html.\nPuedes abrirlo directamente desde el explorador de archivos o ejecutar el siguiente comando:\nopen _site/index.html   # En macOS\nstart _site/index.html  # En Windows\nxdg-open _site/index.html  # En Linux\n\n\n\nDiagrama de flujo\n\n\n\n\nRenderización y Salida\nUna vez que hayas creado tu archivo .qmd, puedes generar la salida en el formato que desees (HTML, PDF, etc.) con el siguiente comando en la terminal: quarto render index.qmd Esto generará el archivo de salida en la carpeta _output/.\n\n\nCódigo\n\nBloques de Código\nPara insertar bloques de código, usa tres tildes inversas (```) al principio y al final del bloque de código. También puedes especificar el lenguaje para resaltar la sintaxis.\n    def saludo():\n    print(\"Hola, mundo\")\n\n    Para código en línea, usa una sola tilde inversa alrededor del fragmento de código.\n    Este es un `código en línea`."
   },
   {
-    "objectID": "index.html#instalación-y-requisitos",
-    "href": "index.html#instalación-y-requisitos",
+    "objectID": "index.html#instalación-y-requisitos-1",
+    "href": "index.html#instalación-y-requisitos-1",
     "title": "myQuartoProj",
     "section": "Instalación y Requisitos",
     "text": "Instalación y Requisitos\nPara comenzar, asegúrate de tener instalado R y RStudio en tu sistema. También necesitarás el paquete dplyr para realizar las operaciones de transformación de datos.\ninstall.packages(“dplyr”)\nSi deseas trabajar con Quarto, puedes instalarlo siguiendo estos"
@@ -60,13 +60,13 @@
     "href": "index.html#configuración-inicial",
     "title": "myQuartoProj",
     "section": "Configuración Inicial",
-    "text": "Configuración Inicial\nAsegúrate de tener los siguientes archivos en tu directorio de trabajo:\n\ndata.csv: Un archivo con los datos de ejemplo para análisis.\nscript.R: El archivo donde escribirás tus scripts de análisis.\n\nLa estructura de tu proyecto debe ser la siguiente:\n/mi-proyecto \n├── data/ \n│ └── data\n├── scripts/ \n│ └── script\n├── documentation/ \n│ └── index.qmd"
+    "text": "Configuración Inicial\nAsegúrate de tener los siguientes archivos en tu directorio de trabajo:\n\ndata.csv: Un archivo con los datos de ejemplo para análisis.\nscript.R: El archivo donde escribirás tus scripts de análisis.\n\nLa estructura de tu proyecto debe ser la siguiente:\nmy-quarto-site/ ├── _quarto.yml ├── index.qmd ├── about.qmd ├── myPage.qmd ├── .gitignore └── .git/"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About this site\n\nEjercicios del repositorio con quarto\nMarkdown en quarto\n\nApartados por terminar\n\n3. Implement Website Navigation\n4. Include Mermaid Diagrams\n5. Configure the _quarto.yml File\n6. Set Up a Git Repository and Link to GitHub\n7. Publish the Website to GitHub Pages\n8."
   }
 ]

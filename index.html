@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="CRhACKER7">
 
 <title>myQuartoProj</title>
 <style>
@@ -132,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./myPage.html"> 
-<span class="menu-text">myPage</span></a>
+<span class="menu-text">Animal example</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -165,7 +166,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#flechas-y-emojis-usar-emoji-para-agregar-emojis." id="toc-flechas-y-emojis-usar-emoji-para-agregar-emojis." class="nav-link" data-scroll-target="#flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</a>
   <ul class="collapse">
-  <li><a href="#introducción-1" id="toc-introducción-1" class="nav-link" data-scroll-target="#introducción-1">Introducción</a></li>
+  <li><a href="#instalación-y-requisitos" id="toc-instalación-y-requisitos" class="nav-link" data-scroll-target="#instalación-y-requisitos">Instalación y Requisitos</a></li>
   </ul></li>
   <li><a href="#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" id="toc-guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" class="nav-link" data-scroll-target="#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown">Guía de Buenas Prácticas para Documentar con Quarto y Markdown</a>
   <ul class="collapse">
@@ -183,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#renderización-y-salida" id="toc-renderización-y-salida" class="nav-link" data-scroll-target="#renderización-y-salida">Renderización y Salida</a></li>
   <li><a href="#código" id="toc-código" class="nav-link" data-scroll-target="#código">Código</a></li>
   </ul></li>
-  <li><a href="#instalación-y-requisitos" id="toc-instalación-y-requisitos" class="nav-link" data-scroll-target="#instalación-y-requisitos">Instalación y Requisitos</a></li>
+  <li><a href="#instalación-y-requisitos-1" id="toc-instalación-y-requisitos-1" class="nav-link" data-scroll-target="#instalación-y-requisitos-1">Instalación y Requisitos</a></li>
   <li><a href="#configuración-inicial" id="toc-configuración-inicial" class="nav-link" data-scroll-target="#configuración-inicial">Configuración Inicial</a></li>
   </ul>
 </nav>
@@ -200,6 +201,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>CRhACKER7 </p>
+          </div>
+  </div>
     
   
     
@@ -387,13 +394,8 @@ Warning
 <section id="flechas-y-emojis-usar-emoji-para-agregar-emojis." class="level2">
 <h2 class="anchored" data-anchor-id="flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</h2>
 <p>:smile:</p>
-<section id="introducción-1" class="level3">
-<h3 class="anchored" data-anchor-id="introducción-1">Introducción</h3>
-<p>Este documento proporciona una guía detallada sobre cómo realizar análisis de datos utilizando el lenguaje R y el paquete <code>dplyr</code>. A lo largo de este documento, se cubrirán los pasos básicos para importar, procesar y visualizar datos.</p>
-<ol start="3" type="1">
-<li>Instalación y Requisitos</li>
-</ol>
-<p>Contenido: Explica cómo instalar las dependencias necesarias para trabajar en el proyecto, así como cualquier otro requisito previo (software, herramientas, bibliotecas).</p>
+<section id="instalación-y-requisitos" class="level3">
+<h3 class="anchored" data-anchor-id="instalación-y-requisitos">Instalación y Requisitos</h3>
 </section>
 </section>
 <section id="guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" class="level2">
@@ -439,7 +441,7 @@ title: "Mi Proyecto Quarto"
 author: "Tu Nombre"
 output: html_document
 ---</code></pre>
-<h1 id="introducción-2">Introducción</h1></li>
+<h1 id="introducción-1">Introducción</h1></li>
 </ol>
 <p>Este es un ejemplo de cómo usar Quarto. Puedes generar informes y documentos de forma sencilla.</p>
 </section>
@@ -524,8 +526,8 @@ xdg-open _site/index.html  # En Linux</code></pre>
 </section>
 </section>
 </section>
-<section id="instalación-y-requisitos" class="level2">
-<h2 class="anchored" data-anchor-id="instalación-y-requisitos">Instalación y Requisitos</h2>
+<section id="instalación-y-requisitos-1" class="level2">
+<h2 class="anchored" data-anchor-id="instalación-y-requisitos-1">Instalación y Requisitos</h2>
 <p>Para comenzar, asegúrate de tener instalado R y RStudio en tu sistema. También necesitarás el paquete <code>dplyr</code> para realizar las operaciones de transformación de datos.</p>
 <p>install.packages(“dplyr”)</p>
 <p>Si deseas trabajar con Quarto, puedes instalarlo siguiendo estos</p>
@@ -538,13 +540,7 @@ xdg-open _site/index.html  # En Linux</code></pre>
 <li><code>script.R</code>: El archivo donde escribirás tus scripts de análisis.</li>
 </ul>
 <p>La estructura de tu proyecto debe ser la siguiente:</p>
-<pre><code>/mi-proyecto 
-├── data/ 
-│ └── data
-├── scripts/ 
-│ └── script
-├── documentation/ 
-│ └── index.qmd</code></pre>
+<p>my-quarto-site/ ├── _quarto.yml ├── index.qmd ├── about.qmd ├── myPage.qmd ├── .gitignore └── .git/</p>
 
 
 </section>
