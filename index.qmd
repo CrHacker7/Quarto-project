@@ -68,7 +68,7 @@ Para crear citas, usa el símbolo de mayor (>).
 
 >Soy una cita
 
-### ::: {.callout-note}
+::: {.callout-note}
 nota
 :::
 
@@ -84,14 +84,13 @@ important
 caution
 :::
 
-::: {callout}
-normal
-:::
-
 ::: {.callout-warning}
 warning
 :::
 
+::: {.callout}
+normal
+:::
 ### Tablas
 
 Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.
