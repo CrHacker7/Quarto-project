@@ -160,7 +160,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#checkbox" id="toc-checkbox" class="nav-link" data-scroll-target="#checkbox">Checkbox</a></li>
   <li><a href="#enlaces-e-imágenes" id="toc-enlaces-e-imágenes" class="nav-link" data-scroll-target="#enlaces-e-imágenes">Enlaces e Imágenes</a></li>
   <li><a href="#citas" id="toc-citas" class="nav-link" data-scroll-target="#citas">Citas</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">:::</a></li>
   <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas">Tablas</a></li>
   <li><a href="#referencias-y-notas" id="toc-referencias-y-notas" class="nav-link" data-scroll-target="#referencias-y-notas">Referencias y Notas</a></li>
   </ul></li>
@@ -276,10 +275,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>Soy una cita</p>
 </blockquote>
-</section>
-<section id="section" class="level3 callout-note">
-<h3 class="callout-note anchored" data-anchor-id="section">:::</h3>
-<p>nota :::</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>nota</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -319,9 +327,6 @@ Caution
 <p>caution</p>
 </div>
 </div>
-<div class="{callout}">
-<p>normal</p>
-</div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -333,6 +338,16 @@ Warning
 </div>
 <div class="callout-body-container callout-body">
 <p>warning</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>normal</p>
+</div>
 </div>
 </div>
 </section>
