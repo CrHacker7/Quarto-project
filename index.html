@@ -160,6 +160,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#checkbox" id="toc-checkbox" class="nav-link" data-scroll-target="#checkbox">Checkbox</a></li>
   <li><a href="#enlaces-e-imágenes" id="toc-enlaces-e-imágenes" class="nav-link" data-scroll-target="#enlaces-e-imágenes">Enlaces e Imágenes</a></li>
   <li><a href="#citas" id="toc-citas" class="nav-link" data-scroll-target="#citas">Citas</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">:::</a></li>
   <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas">Tablas</a></li>
   <li><a href="#referencias-y-notas" id="toc-referencias-y-notas" class="nav-link" data-scroll-target="#referencias-y-notas">Referencias y Notas</a></li>
   </ul></li>
@@ -276,6 +277,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Soy una cita</p>
 </blockquote>
 </section>
+<section id="section" class="level3 callout-note">
+<h3 class="callout-note anchored" data-anchor-id="section">:::</h3>
+<p>nota :::</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>tip</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>important</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>caution</p>
+</div>
+</div>
+<div class="{callout}">
+<p>normal</p>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>warning</p>
+</div>
+</div>
+</section>
 <section id="tablas" class="level3">
 <h3 class="anchored" data-anchor-id="tablas">Tablas</h3>
 <p>Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.</p>
@@ -359,11 +419,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Escribir un Documento Básico en Quarto</p>
 <p>Ahora que tienes un archivo .qmd, ábrelo en tu editor de texto o IDE favorito (por ejemplo, Visual Studio Code, RStudio, etc.). Vamos a escribir algo de contenido básico.</p>
 <p>Ejemplo de contenido para el archivo index.qmd:</p>
-<pre><code> ---
- title: "Mi Proyecto Quarto"
- author: "Tu Nombre"
- output: html_document
- ---</code></pre>
+<pre><code>---
+title: "Mi Proyecto Quarto"
+author: "Tu Nombre"
+output: html_document
+---</code></pre>
 <h1 id="introducción-2">Introducción</h1></li>
 </ol>
 <p>Este es un ejemplo de cómo usar Quarto. Puedes generar informes y documentos de forma sencilla.</p>
