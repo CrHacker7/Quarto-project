@@ -7,6 +7,13 @@
     "text": "About Animal example…\n\n\n\n\n\ngraph LR\n    A[Client] --&gt; B[Load Balancer]\n    B --&gt; C[Server1]\n    B --&gt; D[Server2]\n\n\n\n\n\n\n\n\n\n\n\n---\ntitle: Animal example\n---\nclassDiagram\n    note \"From Duck till Zebra\"\n    Animal &lt;|-- Duck\n    note for Duck \"can fly\\ncan swim\\ncan dive\\ncan help in debugging\"\n    Animal &lt;|-- Fish\n    Animal &lt;|-- Zebra\n    Animal : +int age\n    Animal : +String gender\n    Animal: +isMammal()\n    Animal: +mate()\n    class Duck{\n        +String beakColor\n        +swim()\n        +quack()\n    }\n    class Fish{\n        -int sizeInFeet\n        -canEat()\n    }\n    class Zebra{\n        +bool is_wild\n        +run()\n    }"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\nEjercicios del repositorio con quarto\nMarkdown en quarto\n\nApartados por terminar\n\n1. Create a Local Markdown Quarto Website\n2. Modify the Website\n3. Implement Website Navigation\n4. Include Mermaid Diagrams\n5. Configure the _quarto.yml File\n6. Set Up a Git Repository and Link to GitHub\n7. Publish the Website to GitHub Pages\n8."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Mi Proyecto Quarto",
@@ -32,7 +39,7 @@
     "href": "index.html#flechas-y-emojis-usar-emoji-para-agregar-emojis.",
     "title": "Mi Proyecto Quarto",
     "section": "Flechas y emojis: Usar :emoji: para agregar emojis.",
-    "text": "Flechas y emojis: Usar :emoji: para agregar emojis.\n:smile:\n\nInstalación y Requisitos"
+    "text": "Flechas y emojis: Usar :emoji: para agregar emojis.\n:smile: :tent:\n\nInstalación y Requisitos"
   },
   {
     "objectID": "index.html#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown",
@@ -61,12 +68,5 @@
     "title": "Mi Proyecto Quarto",
     "section": "Configuración Inicial",
     "text": "Configuración Inicial\nAsegúrate de tener los siguientes archivos en tu directorio de trabajo:\n\ndata.csv: Un archivo con los datos de ejemplo para análisis.\nscript.R: El archivo donde escribirás tus scripts de análisis.\n\nLa estructura de tu proyecto debe ser la siguiente:\nmy-quarto-site/ ├── _quarto.yml ├── index.qmd ├── about.qmd ├── myPage.qmd ├── .gitignore └── .git/"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\nEjercicios del repositorio con quarto\nMarkdown en quarto\n\nApartados por terminar\n\n1. Create a Local Markdown Quarto Website\n2. Modify the Website\n3. Implement Website Navigation\n4. Include Mermaid Diagrams\n5. Configure the _quarto.yml File\n6. Set Up a Git Repository and Link to GitHub\n7. Publish the Website to GitHub Pages\n8."
   }
 ]
