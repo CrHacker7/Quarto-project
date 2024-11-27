@@ -6,7 +6,7 @@ title: "myQuartoProj"
 ## Learnig how to do a documentation with `md` and `quarto`
 
 
-[Mi Repositorio ](https://crhacker7.github.com.git)
+[Mi Repositorio ](https://crhacker7.github.io/Quarto-project/)
 
 
 ## Las buenas prácticas de la Documentación
@@ -95,10 +95,10 @@ normal
 
 Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.
 
-| Columna 1 | Columna 2 | Columna 3 |
-|-----------|-----------|-----------|
-| Dato 1    | Dato 2    | Dato 3    |
-| Dato 4    | Dato 5    | Dato 6    |
+| Columna 1   | Columna 2   | Columna 3   |
+| ----------- | ----------- |        ---: |
+| Dato 1      | Dato 2      | Dato 3      |
+| Dato 4      | Dato 5      | Dato 6      |
 
 ### Referencias y Notas
 
@@ -107,7 +107,8 @@ Markdown también te permite escribir notas o advertencias, aunque esto depende 
 > **Nota**: Esta es una nota importante.
 
 ## Flechas y emojis: Usar :emoji: para agregar emojis.
-:smile:
+
+:smile: :tent:
 
 
 ### Instalación y Requisitos
