@@ -1,14 +1,15 @@
 ---
 title: "myQuartoProj"
+author: "CRhACKER7"
 ---
 
 
 ## Learnig how to do a documentation with `md` and `quarto`
 
 
-[Mi Repositorio ](https://crhacker7.github.io/Quarto-project/)
+[Mi Repositorio GitHub ](https://github.com/CrHacker7/Quarto-project)
 
-mi repositorio de github actualizado
+#### Mi repositorio de github actualizado
 
 
 ## Las buenas prácticas de la Documentación
