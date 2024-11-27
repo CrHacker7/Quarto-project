@@ -8,6 +8,8 @@ title: "myQuartoProj"
 
 [Mi Repositorio ](https://crhacker7.github.io/Quarto-project/)
 
+mi repositorio de github actualizado
+
 
 ## Las buenas prácticas de la Documentación
 
