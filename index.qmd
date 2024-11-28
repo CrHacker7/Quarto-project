@@ -1,127 +1,17 @@
 ---
 title: "myQuartoProj"
 author: "CRhACKER7"
+toc: true
+format:     
+    html
 ---
 
 
-## Learnig how to do a documentation with `md` and `quarto`
-
 
 [Mi Repositorio GitHub ](https://github.com/CrHacker7/Quarto-project)
-
-
-## Las buenas prácticas de la Documentación
-
-
-
-
-### Introducción 
-
-Contenido: Explicación general del propósito del documento, qué se va a cubrir y el objetivo principal.
-### Encabezados 
-Para crear encabezados en Quarto, usas los símbolos #, tal como en Markdown estándar.
-
-
-### Listas desordenadas (con viñetas)
-
-Utiliza asteriscos (*), guiones (-) o más (+) para las listas no ordenadas.
-    - Elemento 1
-    - Elemento 2
-        - Sub-elemento 1
-        - Sub-elemento 2
-
-### Listas ordenadas (numeradas)
-Las listas numeradas se crean con números seguidos de un punto.
-
-    1. Primer elemento
-    2. Segundo elemento
-    3. Tercer elemento
-
-### Negrita y Cursiva
-Para resaltar texto, puedes utilizar asteriscos (*) o guiones bajos (_).
-    Negrita: usa dos asteriscos o guiones bajos alrededor de la palabra.
-    Cursiva: usa un solo asterisco o guion bajo alrededor de la palabra.
-    Negrita y cursiva: usa tres asteriscos o guiones bajos.
-    El tachado se crea con dos tildes (~~) alrededor de la palabra o frase.
-
-### Checkbox
-- [ ] Task 1
-    - Create
-- [x] Task 2
-    - Edit
-- [ ] Task 3
-    - Metrics
-- [ ] Task 4
-    - gh pages
-
-### Enlaces e Imágenes
-[Texto del enlace](http://enlace.com)
-
-- Imágenes
-La sintaxis es similar a la de los enlaces, pero con un signo de exclamación (!) al principio.
-
-![Texto alternativo](url-de-imagen.jpg)
-
-
-### Citas
-
-Para crear citas, usa el símbolo de mayor (>).
-
->Soy una cita
-
-::: {.callout-note}
-Ir poco a poco cada día.
-:::
-
-::: {.callout-tip}
-Repasar los puntos clave de tus apuntes
-:::
-
-::: {.callout-important}
-SER CONSTANTE!
-:::
-
-::: {.callout-caution}
-No olvidarse de SCRUM!
-:::
-
-::: {.callout-warning}
-Si olvidaste algo aprendido, repasar!
-:::
-
-::: {.callout}
-Importa más el camino, que el destino.
-:::
-
-### Tablas
-
-Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.
-
-| Columna 1   | Columna 2   | Columna 3   |
-| ----------- | ----------- |        ---: |
-| Dato 1      | Dato 2      | Dato 3      |
-| Dato 4      | Dato 5      | Dato 6      |
-
-### Referencias y Notas
-
-Markdown también te permite escribir notas o advertencias, aunque esto depende de la plataforma en la que estés usando Markdown.
-
-> **Nota**: Esta es una nota importante.
-
-## Flechas y emojis: Usar :emoji: para agregar emojis.
-
-:smile: :tent: \:tada:
-
-::: {.callout-warning}
-aún no me salen los emojis!
-:::
-
-### Instalación y Requisitos
-
-
-## Guía de Buenas Prácticas para Documentar con Quarto y Markdown
-
-1. Instalación de Quarto
+# Guía de Buenas Prácticas para Documentar con Quarto y Markdown
+## Instalación y Requisitos
+### Instalación de Quarto
 
 Quarto es una herramienta de documentación y análisis que soporta Markdown de manera avanzada. Puedes instalar Quarto siguiendo estos pasos:
 
@@ -169,11 +59,13 @@ Una vez instalado, puedes verificar que Quarto está correctamente instalado eje
 
     Ejemplo de contenido para el archivo index.qmd:
 
----
-title: "Mi Proyecto Quarto"
-author: "Tu Nombre"
-output: html_document
----
+    ```
+        ---
+        title: "Mi Proyecto Quarto"
+        author: "Tu Nombre"
+        output: html_document
+        ---
+    ```
 
 # Introducción
 
@@ -284,7 +176,7 @@ Asegúrate de tener los siguientes archivos en tu directorio de trabajo:
 
 La estructura de tu proyecto debe ser la siguiente:
 
-
+```
 my-quarto-site/
 ├── _quarto.yml
 ├── index.qmd
@@ -292,6 +184,118 @@ my-quarto-site/
 ├── myPage.qmd
 ├── .gitignore
 └── .git/
+```
+### Algunos ejemplos a continuación 
+
+
+### Introducción 
+
+Contenido: Explicación general del propósito del documento, qué se va a cubrir y el objetivo principal.
+
+### Encabezados 
+Para crear encabezados en Quarto, usas los símbolos #, tal como en Markdown estándar.
+
+
+### Listas desordenadas (con viñetas)
+
+Utiliza asteriscos (*), guiones (-) o más (+) para las listas no ordenadas.
+
+    - Elemento 1
+    - Elemento 2
+        - Sub-elemento 1
+        - Sub-elemento 2
+    * Elemento 3
+    * Elemento 4  
+
+
+### Listas ordenadas (numeradas)
+Las listas numeradas se crean con números seguidos de un punto.
+
+    1. Primer elemento
+    2. Segundo elemento
+    3. Tercer elemento
+
+### Negrita y Cursiva
+Para resaltar texto, puedes utilizar asteriscos (*) o guiones bajos (_).
+    Negrita: usa dos asteriscos o guiones bajos alrededor de la palabra.
+    Cursiva: usa un solo asterisco o guion bajo alrededor de la palabra.
+    Negrita y cursiva: usa tres asteriscos o guiones bajos.
+    El tachado se crea con dos tildes (~~) alrededor de la palabra o frase.
+
+### Checkbox
+- [ ] Task 1
+    - Create
+- [x] Task 2
+    - Edit
+- [ ] Task 3
+    - Metrics
+- [ ] Task 4
+    - gh pages
+
+### Enlaces e Imágenes
+[Texto del enlace](http://enlace.com)
+
+- ### Imágenes
+La sintaxis es similar a la de los enlaces, pero con un signo de exclamación (!) al principio.
+
+![Texto descriptivo de esta img](grafico.jpg)
+
+
+### Citas
+
+Para crear citas, usa el símbolo de mayor (>).
+
+>Soy una cita
+
+::: {.callout-note}
+Ir poco a poco cada día.
+:::
+
+::: {.callout-tip}
+Repasar los puntos clave de tus apuntes
+:::
+
+::: {.callout-important}
+SER CONSTANTE!
+:::
+
+::: {.callout-caution}
+No olvidarse de SCRUM!
+:::
+
+::: {.callout-warning}
+Tener en cuenta los espacios y tabulaciones
+:::
+
+::: {.callout}
+Importa más el camino, que el destino.
+:::
+
+### Tablas
+
+Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.
+
+| Columna 1   | Columna 2   | Columna 3   |
+| ----------- | ----------- |        ---: |
+| Dato 1      | Dato 2      | Dato 3      |
+| Dato 4      | Dato 5      | Dato 6      |
+
+### Referencias y Notas
+
+Markdown también te permite escribir notas o advertencias, aunque esto depende de la plataforma en la que estés usando Markdown.
+
+> **Nota**: Esta es una nota importante.
+
+## Flechas y emojis: Usar :emoji: para agregar emojis.
+
+:smile: :tent: \:tada:
+
+::: {.callout-important}
+Buscar más info sobre emojis en [Quarto](https://quarto.org/docs/get-started/)
+:::
+
+
+
 
 
 
