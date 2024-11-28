@@ -9,8 +9,6 @@ author: "CRhACKER7"
 
 [Mi Repositorio GitHub ](https://github.com/CrHacker7/Quarto-project)
 
-#### Mi repositorio de github actualizado
-
 
 ## Las buenas prácticas de la Documentación
 
@@ -72,28 +70,29 @@ Para crear citas, usa el símbolo de mayor (>).
 >Soy una cita
 
 ::: {.callout-note}
-nota
+Ir poco a poco cada día.
 :::
 
 ::: {.callout-tip}
-tip
+Repasar los puntos clave de tus apuntes
 :::
 
 ::: {.callout-important}
-important
+SER CONSTANTE!
 :::
 
 ::: {.callout-caution}
-caution
+No olvidarse de SCRUM!
 :::
 
 ::: {.callout-warning}
-warning
+Si olvidaste algo aprendido, repasar!
 :::
 
 ::: {.callout}
-normal
+Importa más el camino, que el destino.
 :::
+
 ### Tablas
 
 Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.
@@ -111,8 +110,11 @@ Markdown también te permite escribir notas o advertencias, aunque esto depende 
 
 ## Flechas y emojis: Usar :emoji: para agregar emojis.
 
-:smile: :tent:
+:smile: :tent: \:tada:
 
+::: {.callout-warning}
+aún no me salen los emojis!
+:::
 
 ### Instalación y Requisitos
 
