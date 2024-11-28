@@ -9,10 +9,10 @@ website:
 #  favicon: /images/home/favicon.ico
 #  back-to-top-navigation: true
 
-#repo-url: https://github.com/CrHacker7/Quarto-project
-#  repo-actions: [edit]
-#  repo-branch: master
-#  repo-link-target: '_blank'
+  repo-url: https://github.com/CrHacker7/Quarto-project
+  repo-actions: [edit]
+  repo-branch: master
+  repo-link-target: '_blank'
   
   navbar:
     left:

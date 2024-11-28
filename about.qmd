@@ -10,9 +10,8 @@ About this site
 #### Apartados por terminar
 - [x] 1. Create a Local Markdown Quarto Website
 - [x] 2. Modify the Website
-- [ ] 3. Implement Website Navigation
-- [ ] 4. Include Mermaid Diagrams
-- [ ] 5. Configure the _quarto.yml File
+- [x] 3. Implement Website Navigation
+- [x] 4. Include Mermaid Diagrams
+- [x] 5. Configure the _quarto.yml File
 - [x] 6. Set Up a Git Repository and Link to GitHub
 - [x] 7. Publish the Website to GitHub Pages
-- [ ] 8. 

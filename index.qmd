@@ -2,13 +2,13 @@
 title: "myQuartoProj"
 author: "CRhACKER7"
 toc: true
-format:     
-    html
+
 ---
 
 
 
 [Mi Repositorio GitHub ](https://github.com/CrHacker7/Quarto-project)
+
 # Guía de Buenas Prácticas para Documentar con Quarto y Markdown
 ## Instalación y Requisitos
 ### Instalación de Quarto
@@ -134,9 +134,6 @@ open _site/index.html   # En macOS
 start _site/index.html  # En Windows
 xdg-open _site/index.html  # En Linux
 ```
-
-
-![Diagrama de flujo](grafico.jpg)
 
 ### Renderización y Salida
 
