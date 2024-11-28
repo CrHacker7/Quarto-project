@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tu Nombre">
+<meta name="author" content="CRhACKER7">
 
-<title>Mi Proyecto Quarto – myQuartoProj</title>
+<title>myQuartoProj</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,30 +151,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learnig-how-to-do-a-documentation-with-md-and-quarto" id="toc-learnig-how-to-do-a-documentation-with-md-and-quarto" class="nav-link active" data-scroll-target="#learnig-how-to-do-a-documentation-with-md-and-quarto">Learnig how to do a documentation with <code>md</code> and <code>quarto</code></a></li>
-  <li><a href="#las-buenas-prácticas-de-la-documentación" id="toc-las-buenas-prácticas-de-la-documentación" class="nav-link" data-scroll-target="#las-buenas-prácticas-de-la-documentación">Las buenas prácticas de la Documentación</a>
-  <ul class="collapse">
-  <li><a href="#introducción" id="toc-introducción" class="nav-link" data-scroll-target="#introducción">Introducción</a></li>
-  <li><a href="#listas-desordenadas-con-viñetas" id="toc-listas-desordenadas-con-viñetas" class="nav-link" data-scroll-target="#listas-desordenadas-con-viñetas">Listas desordenadas (con viñetas)</a></li>
-  <li><a href="#listas-ordenadas-numeradas" id="toc-listas-ordenadas-numeradas" class="nav-link" data-scroll-target="#listas-ordenadas-numeradas">Listas ordenadas (numeradas)</a></li>
-  <li><a href="#negrita-y-cursiva" id="toc-negrita-y-cursiva" class="nav-link" data-scroll-target="#negrita-y-cursiva">Negrita y Cursiva</a></li>
-  <li><a href="#checkbox" id="toc-checkbox" class="nav-link" data-scroll-target="#checkbox">Checkbox</a></li>
-  <li><a href="#enlaces-e-imágenes" id="toc-enlaces-e-imágenes" class="nav-link" data-scroll-target="#enlaces-e-imágenes">Enlaces e Imágenes</a></li>
-  <li><a href="#citas" id="toc-citas" class="nav-link" data-scroll-target="#citas">Citas</a></li>
-  <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas">Tablas</a></li>
-  <li><a href="#referencias-y-notas" id="toc-referencias-y-notas" class="nav-link" data-scroll-target="#referencias-y-notas">Referencias y Notas</a></li>
-  </ul></li>
-  <li><a href="#flechas-y-emojis-usar-emoji-para-agregar-emojis." id="toc-flechas-y-emojis-usar-emoji-para-agregar-emojis." class="nav-link" data-scroll-target="#flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</a>
-  <ul class="collapse">
-  <li><a href="#instalación-y-requisitos" id="toc-instalación-y-requisitos" class="nav-link" data-scroll-target="#instalación-y-requisitos">Instalación y Requisitos</a></li>
-  </ul></li>
-  <li><a href="#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" id="toc-guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" class="nav-link" data-scroll-target="#guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown">Guía de Buenas Prácticas para Documentar con Quarto y Markdown</a>
-  <ul class="collapse">
-  <li><a href="#instalación-en-windowsmacoslinux" id="toc-instalación-en-windowsmacoslinux" class="nav-link" data-scroll-target="#instalación-en-windowsmacoslinux">Instalación en Windows/macOS/Linux</a></li>
+  <li><a href="#instalación-en-windowsmacoslinux" id="toc-instalación-en-windowsmacoslinux" class="nav-link active" data-scroll-target="#instalación-en-windowsmacoslinux">Instalación en Windows/macOS/Linux</a></li>
   <li><a href="#verificar-la-instalación" id="toc-verificar-la-instalación" class="nav-link" data-scroll-target="#verificar-la-instalación">Verificar la Instalación</a></li>
   <li><a href="#crear-un-proyecto-básico-con-quarto" id="toc-crear-un-proyecto-básico-con-quarto" class="nav-link" data-scroll-target="#crear-un-proyecto-básico-con-quarto">Crear un Proyecto Básico con Quarto</a></li>
-  </ul></li>
-  <li><a href="#introducción-1" id="toc-introducción-1" class="nav-link" data-scroll-target="#introducción-1">Introducción</a>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link" data-scroll-target="#introducción">Introducción</a>
   <ul class="collapse">
   <li><a href="#qué-es-quarto" id="toc-qué-es-quarto" class="nav-link" data-scroll-target="#qué-es-quarto">¿Qué es Quarto?</a>
   <ul class="collapse">
@@ -186,8 +166,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#renderización-y-salida" id="toc-renderización-y-salida" class="nav-link" data-scroll-target="#renderización-y-salida">Renderización y Salida</a></li>
   <li><a href="#código" id="toc-código" class="nav-link" data-scroll-target="#código">Código</a></li>
   </ul></li>
-  <li><a href="#instalación-y-requisitos-1" id="toc-instalación-y-requisitos-1" class="nav-link" data-scroll-target="#instalación-y-requisitos-1">Instalación y Requisitos</a></li>
-  <li><a href="#configuración-inicial" id="toc-configuración-inicial" class="nav-link" data-scroll-target="#configuración-inicial">Configuración Inicial</a></li>
+  <li><a href="#instalación-y-requisitos" id="toc-instalación-y-requisitos" class="nav-link" data-scroll-target="#instalación-y-requisitos">Instalación y Requisitos</a></li>
+  <li><a href="#configuración-inicial" id="toc-configuración-inicial" class="nav-link" data-scroll-target="#configuración-inicial">Configuración Inicial</a>
+  <ul class="collapse">
+  <li><a href="#algunos-ejemplos-a-continuación" id="toc-algunos-ejemplos-a-continuación" class="nav-link" data-scroll-target="#algunos-ejemplos-a-continuación">Algunos ejemplos a continuación</a></li>
+  <li><a href="#introducción-1" id="toc-introducción-1" class="nav-link" data-scroll-target="#introducción-1">Introducción</a></li>
+  <li><a href="#encabezados" id="toc-encabezados" class="nav-link" data-scroll-target="#encabezados">Encabezados</a></li>
+  <li><a href="#listas-desordenadas-con-viñetas" id="toc-listas-desordenadas-con-viñetas" class="nav-link" data-scroll-target="#listas-desordenadas-con-viñetas">Listas desordenadas (con viñetas)</a></li>
+  <li><a href="#listas-ordenadas-numeradas" id="toc-listas-ordenadas-numeradas" class="nav-link" data-scroll-target="#listas-ordenadas-numeradas">Listas ordenadas (numeradas)</a></li>
+  <li><a href="#negrita-y-cursiva" id="toc-negrita-y-cursiva" class="nav-link" data-scroll-target="#negrita-y-cursiva">Negrita y Cursiva</a></li>
+  <li><a href="#checkbox" id="toc-checkbox" class="nav-link" data-scroll-target="#checkbox">Checkbox</a></li>
+  <li><a href="#enlaces-e-imágenes" id="toc-enlaces-e-imágenes" class="nav-link" data-scroll-target="#enlaces-e-imágenes">Enlaces e Imágenes</a></li>
+  <li><a href="#citas" id="toc-citas" class="nav-link" data-scroll-target="#citas">Citas</a></li>
+  <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas">Tablas</a></li>
+  <li><a href="#referencias-y-notas" id="toc-referencias-y-notas" class="nav-link" data-scroll-target="#referencias-y-notas">Referencias y Notas</a></li>
+  </ul></li>
+  <li><a href="#flechas-y-emojis-usar-emoji-para-agregar-emojis." id="toc-flechas-y-emojis-usar-emoji-para-agregar-emojis." class="nav-link" data-scroll-target="#flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -197,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mi Proyecto Quarto</h1>
+<h1 class="title">myQuartoProj</h1>
 </div>
 
 
@@ -220,205 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="learnig-how-to-do-a-documentation-with-md-and-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="learnig-how-to-do-a-documentation-with-md-and-quarto">Learnig how to do a documentation with <code>md</code> and <code>quarto</code></h2>
-<p><a href="https://github.com/CrHacker7/Quarto-project">Mi Repositorio GitHub</a></p>
-</section>
-<section id="las-buenas-prácticas-de-la-documentación" class="level2">
-<h2 class="anchored" data-anchor-id="las-buenas-prácticas-de-la-documentación">Las buenas prácticas de la Documentación</h2>
-<section id="introducción" class="level3">
-<h3 class="anchored" data-anchor-id="introducción">Introducción</h3>
-<p>Contenido: Explicación general del propósito del documento, qué se va a cubrir y el objetivo principal. ### Encabezados Para crear encabezados en Quarto, usas los símbolos #, tal como en Markdown estándar.</p>
-</section>
-<section id="listas-desordenadas-con-viñetas" class="level3">
-<h3 class="anchored" data-anchor-id="listas-desordenadas-con-viñetas">Listas desordenadas (con viñetas)</h3>
-<p>Utiliza asteriscos (*), guiones (-) o más (+) para las listas no ordenadas. - Elemento 1 - Elemento 2 - Sub-elemento 1 - Sub-elemento 2</p>
-</section>
-<section id="listas-ordenadas-numeradas" class="level3">
-<h3 class="anchored" data-anchor-id="listas-ordenadas-numeradas">Listas ordenadas (numeradas)</h3>
-<p>Las listas numeradas se crean con números seguidos de un punto.</p>
-<pre><code>1. Primer elemento
-2. Segundo elemento
-3. Tercer elemento</code></pre>
-</section>
-<section id="negrita-y-cursiva" class="level3">
-<h3 class="anchored" data-anchor-id="negrita-y-cursiva">Negrita y Cursiva</h3>
-<p>Para resaltar texto, puedes utilizar asteriscos (*) o guiones bajos (_). Negrita: usa dos asteriscos o guiones bajos alrededor de la palabra. Cursiva: usa un solo asterisco o guion bajo alrededor de la palabra. Negrita y cursiva: usa tres asteriscos o guiones bajos. El tachado se crea con dos tildes (~~) alrededor de la palabra o frase.</p>
-</section>
-<section id="checkbox" class="level3">
-<h3 class="anchored" data-anchor-id="checkbox">Checkbox</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Task 1</label>
-<ul>
-<li>Create</li>
-</ul></li>
-<li><label><input type="checkbox" checked="">Task 2</label>
-<ul>
-<li>Edit</li>
-</ul></li>
-<li><label><input type="checkbox">Task 3</label>
-<ul>
-<li>Metrics</li>
-</ul></li>
-<li><label><input type="checkbox">Task 4</label>
-<ul>
-<li>gh pages</li>
-</ul></li>
-</ul>
-</section>
-<section id="enlaces-e-imágenes" class="level3">
-<h3 class="anchored" data-anchor-id="enlaces-e-imágenes">Enlaces e Imágenes</h3>
-<p><a href="http://enlace.com">Texto del enlace</a></p>
-<ul>
-<li>Imágenes La sintaxis es similar a la de los enlaces, pero con un signo de exclamación (!) al principio.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="url-de-imagen.jpg" class="img-fluid figure-img"></p>
-<figcaption>Texto alternativo</figcaption>
-</figure>
-</div>
-</section>
-<section id="citas" class="level3">
-<h3 class="anchored" data-anchor-id="citas">Citas</h3>
-<p>Para crear citas, usa el símbolo de mayor (&gt;).</p>
-<blockquote class="blockquote">
-<p>Soy una cita</p>
-</blockquote>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ir poco a poco cada día.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Repasar los puntos clave de tus apuntes</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>SER CONSTANTE!</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>No olvidarse de SCRUM!</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Si olvidaste algo aprendido, repasar!</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-none no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Importa más el camino, que el destino.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="tablas" class="level3">
-<h3 class="anchored" data-anchor-id="tablas">Tablas</h3>
-<p>Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Columna 1</th>
-<th>Columna 2</th>
-<th style="text-align: right;">Columna 3</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dato 1</td>
-<td>Dato 2</td>
-<td style="text-align: right;">Dato 3</td>
-</tr>
-<tr class="even">
-<td>Dato 4</td>
-<td>Dato 5</td>
-<td style="text-align: right;">Dato 6</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="referencias-y-notas" class="level3">
-<h3 class="anchored" data-anchor-id="referencias-y-notas">Referencias y Notas</h3>
-<p>Markdown también te permite escribir notas o advertencias, aunque esto depende de la plataforma en la que estés usando Markdown.</p>
-<blockquote class="blockquote">
-<p><strong>Nota</strong>: Esta es una nota importante.</p>
-</blockquote>
-</section>
-</section>
-<section id="flechas-y-emojis-usar-emoji-para-agregar-emojis." class="level2">
-<h2 class="anchored" data-anchor-id="flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</h2>
-<p>:smile: :tent: :tada:</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>aún no me salen los emojis!</p>
-</div>
-</div>
-<section id="instalación-y-requisitos" class="level3">
-<h3 class="anchored" data-anchor-id="instalación-y-requisitos">Instalación y Requisitos</h3>
-</section>
-</section>
-<section id="guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown" class="level2">
-<h2 class="anchored" data-anchor-id="guía-de-buenas-prácticas-para-documentar-con-quarto-y-markdown">Guía de Buenas Prácticas para Documentar con Quarto y Markdown</h2>
-<ol type="1">
-<li>Instalación de Quarto</li>
-</ol>
+<p><a href="https://github.com/CrHacker7/Quarto-project">Mi Repositorio GitHub</a> # Guía de Buenas Prácticas para Documentar con Quarto y Markdown ## Instalación y Requisitos ### Instalación de Quarto</p>
 <p>Quarto es una herramienta de documentación y análisis que soporta Markdown de manera avanzada. Puedes instalar Quarto siguiendo estos pasos:</p>
 <section id="instalación-en-windowsmacoslinux" class="level3">
 <h3 class="anchored" data-anchor-id="instalación-en-windowsmacoslinux">Instalación en Windows/macOS/Linux</h3>
@@ -451,11 +247,15 @@ Warning
 <ol start="2" type="1">
 <li><p>Escribir un Documento Básico en Quarto</p>
 <p>Ahora que tienes un archivo .qmd, ábrelo en tu editor de texto o IDE favorito (por ejemplo, Visual Studio Code, RStudio, etc.). Vamos a escribir algo de contenido básico.</p>
-<p>Ejemplo de contenido para el archivo index.qmd:</p></li>
+<p>Ejemplo de contenido para el archivo index.qmd:</p>
+<pre><code>    ---
+    title: "Mi Proyecto Quarto"
+    author: "Tu Nombre"
+    output: html_document
+    ---</code></pre></li>
 </ol>
 </section>
-</section>
-<section id="introducción-1" class="level1">
+<section id="introducción" class="level1">
 <h1>Introducción</h1>
 <p>Este es un ejemplo de cómo usar Quarto. Puedes generar informes y documentos de forma sencilla.</p>
 <section id="qué-es-quarto" class="level2">
@@ -538,8 +338,8 @@ xdg-open _site/index.html  # En Linux</code></pre>
 </section>
 </section>
 </section>
-<section id="instalación-y-requisitos-1" class="level2">
-<h2 class="anchored" data-anchor-id="instalación-y-requisitos-1">Instalación y Requisitos</h2>
+<section id="instalación-y-requisitos" class="level2">
+<h2 class="anchored" data-anchor-id="instalación-y-requisitos">Instalación y Requisitos</h2>
 <p>Para comenzar, asegúrate de tener instalado R y RStudio en tu sistema. También necesitarás el paquete <code>dplyr</code> para realizar las operaciones de transformación de datos.</p>
 <p>install.packages(“dplyr”)</p>
 <p>Si deseas trabajar con Quarto, puedes instalarlo siguiendo estos</p>
@@ -552,7 +352,211 @@ xdg-open _site/index.html  # En Linux</code></pre>
 <li><code>script.R</code>: El archivo donde escribirás tus scripts de análisis.</li>
 </ul>
 <p>La estructura de tu proyecto debe ser la siguiente:</p>
-<p>my-quarto-site/ ├── _quarto.yml ├── index.qmd ├── about.qmd ├── myPage.qmd ├── .gitignore └── .git/</p>
+<pre><code>my-quarto-site/
+├── _quarto.yml
+├── index.qmd
+├── about.qmd
+├── myPage.qmd
+├── .gitignore
+└── .git/</code></pre>
+<section id="algunos-ejemplos-a-continuación" class="level3">
+<h3 class="anchored" data-anchor-id="algunos-ejemplos-a-continuación">Algunos ejemplos a continuación</h3>
+</section>
+<section id="introducción-1" class="level3">
+<h3 class="anchored" data-anchor-id="introducción-1">Introducción</h3>
+<p>Contenido: Explicación general del propósito del documento, qué se va a cubrir y el objetivo principal.</p>
+</section>
+<section id="encabezados" class="level3">
+<h3 class="anchored" data-anchor-id="encabezados">Encabezados</h3>
+<p>Para crear encabezados en Quarto, usas los símbolos #, tal como en Markdown estándar.</p>
+</section>
+<section id="listas-desordenadas-con-viñetas" class="level3">
+<h3 class="anchored" data-anchor-id="listas-desordenadas-con-viñetas">Listas desordenadas (con viñetas)</h3>
+<p>Utiliza asteriscos (*), guiones (-) o más (+) para las listas no ordenadas.</p>
+<pre><code>- Elemento 1
+- Elemento 2
+    - Sub-elemento 1
+    - Sub-elemento 2
+* Elemento 3
+* Elemento 4  </code></pre>
+</section>
+<section id="listas-ordenadas-numeradas" class="level3">
+<h3 class="anchored" data-anchor-id="listas-ordenadas-numeradas">Listas ordenadas (numeradas)</h3>
+<p>Las listas numeradas se crean con números seguidos de un punto.</p>
+<pre><code>1. Primer elemento
+2. Segundo elemento
+3. Tercer elemento</code></pre>
+</section>
+<section id="negrita-y-cursiva" class="level3">
+<h3 class="anchored" data-anchor-id="negrita-y-cursiva">Negrita y Cursiva</h3>
+<p>Para resaltar texto, puedes utilizar asteriscos (*) o guiones bajos (_). Negrita: usa dos asteriscos o guiones bajos alrededor de la palabra. Cursiva: usa un solo asterisco o guion bajo alrededor de la palabra. Negrita y cursiva: usa tres asteriscos o guiones bajos. El tachado se crea con dos tildes (~~) alrededor de la palabra o frase.</p>
+</section>
+<section id="checkbox" class="level3">
+<h3 class="anchored" data-anchor-id="checkbox">Checkbox</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Task 1</label>
+<ul>
+<li>Create</li>
+</ul></li>
+<li><label><input type="checkbox" checked="">Task 2</label>
+<ul>
+<li>Edit</li>
+</ul></li>
+<li><label><input type="checkbox">Task 3</label>
+<ul>
+<li>Metrics</li>
+</ul></li>
+<li><label><input type="checkbox">Task 4</label>
+<ul>
+<li>gh pages</li>
+</ul></li>
+</ul>
+</section>
+<section id="enlaces-e-imágenes" class="level3">
+<h3 class="anchored" data-anchor-id="enlaces-e-imágenes">Enlaces e Imágenes</h3>
+<p><a href="http://enlace.com">Texto del enlace</a></p>
+<ul>
+<li><h3 id="imágenes" class="anchored">Imágenes</h3>
+La sintaxis es similar a la de los enlaces, pero con un signo de exclamación (!) al principio.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="grafico.jpg" class="img-fluid figure-img"></p>
+<figcaption>Texto descriptivo de esta img</figcaption>
+</figure>
+</div>
+</section>
+<section id="citas" class="level3">
+<h3 class="anchored" data-anchor-id="citas">Citas</h3>
+<p>Para crear citas, usa el símbolo de mayor (&gt;).</p>
+<blockquote class="blockquote">
+<p>Soy una cita</p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ir poco a poco cada día.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Repasar los puntos clave de tus apuntes</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>SER CONSTANTE!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No olvidarse de SCRUM!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tener en cuenta los espacios y tabulaciones</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Importa más el camino, que el destino.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="tablas" class="level3">
+<h3 class="anchored" data-anchor-id="tablas">Tablas</h3>
+<p>Puedes crear tablas utilizando guiones (-) para las filas y barras verticales (|) para separar las columnas.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Columna 1</th>
+<th>Columna 2</th>
+<th style="text-align: right;">Columna 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dato 1</td>
+<td>Dato 2</td>
+<td style="text-align: right;">Dato 3</td>
+</tr>
+<tr class="even">
+<td>Dato 4</td>
+<td>Dato 5</td>
+<td style="text-align: right;">Dato 6</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="referencias-y-notas" class="level3">
+<h3 class="anchored" data-anchor-id="referencias-y-notas">Referencias y Notas</h3>
+<p>Markdown también te permite escribir notas o advertencias, aunque esto depende de la plataforma en la que estés usando Markdown.</p>
+<blockquote class="blockquote">
+<p><strong>Nota</strong>: Esta es una nota importante.</p>
+</blockquote>
+</section>
+</section>
+<section id="flechas-y-emojis-usar-emoji-para-agregar-emojis." class="level2">
+<h2 class="anchored" data-anchor-id="flechas-y-emojis-usar-emoji-para-agregar-emojis.">Flechas y emojis: Usar :emoji: para agregar emojis.</h2>
+<p>:smile: :tent: :tada:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Buscar más info sobre emojis en <a href="https://quarto.org/docs/get-started/">Quarto</a></p>
+</div>
+</div>
 
 
 </section>
