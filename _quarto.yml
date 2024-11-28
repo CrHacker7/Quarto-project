@@ -6,8 +6,8 @@ author: CRhACKER7
 
 website:
   title: "myQuartoProj"
-#  favicon: /images/home/favicon.ico
-#  back-to-top-navigation: true
+  favicon: /images/home/favicon.ico
+  back-to-top-navigation: true
 
   repo-url: https://github.com/CrHacker7/Quarto-project
   repo-actions: [edit]

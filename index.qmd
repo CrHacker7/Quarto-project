@@ -85,7 +85,7 @@ Puedes incluir código dentro de tus documentos, antes necesitas instalar python
 Un proyecto típico en Quarto incluye archivos de Markdown (.qmd) que se procesan para generar documentos de salida como HTML, PDF o presentaciones.
 
 <details>
-<summary> Estructura</summary>
+<summary> Estructura general</summary>
     mi-proyecto/
     │
     ├── index.qmd      # Documento principal en Quarto
